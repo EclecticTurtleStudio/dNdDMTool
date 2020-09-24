@@ -6,14 +6,23 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
+@RequestMapping("world-generator")
 public class WorldGeneratorController {
 
-    @RequestMapping("world-randomizer")
+    @RequestMapping("")
     public String index(Model model) {
 
-        model.addAttribute("title", "World Randomizer");
+        model.addAttribute("title", "World Generator");
 
-        return "world-randomizer";
+        return "world-generator";
+    }
+
+    @RequestMapping("add")
+    public String displayAddWorldName(Model model) {
+
+        model.addAttribute("title", "Add World Name");
+
+        return "world-generator/add";
     }
 
 }

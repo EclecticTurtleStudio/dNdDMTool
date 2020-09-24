@@ -11,6 +11,11 @@ body {
     background-color: #24402e;
 }
 
+#navbar a {
+    color: white;
+    text-decoration: none;
+}
+
 #welcome {
     font-family: 'Permanent Marker', cursive;
     text-align: center;
