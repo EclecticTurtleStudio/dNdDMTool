@@ -1,0 +1,38 @@
+body {
+    background-image: url("/images/GlobeBackground.jpg");
+    background-size: cover;
+}
+
+#PageGuts {
+    padding-top: 20px;
+}
+
+#navbar {
+    background-color: #24402e;
+}
+
+#welcome {
+    font-family: 'Permanent Marker', cursive;
+    text-align: center;
+    color: #24402e;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+#sidebar form{
+    background-color: rgba(255, 255, 255, 0.3);
+    border: white;
+    padding: 5px 5px 10px 10px;
+}
+
+#WorldGenerator img{
+
+}
+
+#TownGenerator img{
+
+}
+
+img {
+    width: 100%;
+}

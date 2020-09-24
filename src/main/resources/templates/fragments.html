@@ -4,14 +4,37 @@
 <head th:fragment="head">
 
     <!-- Bootstrap stylesheets and script -->
-    <link th:href="@{/css/bootstrap.css}" rel="stylesheet" />
-    <link th:href="@{/css/techjobs.css}" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link th:href="@{/css/main.css}" rel="stylesheet" />
     <script type="text/javascript" th:src="@{/js/bootstrap.js}"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 
     <title th:text="${title}">DM Tool</title>
 </head>
 
-<body>
+<div th:fragment="nav" id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a href="/" class="navbar-brand"><img src="images/dnd_logo_white.png" height="50" width="auto"></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#">World Generator</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-</body>
+<div th:fragment="sidebar" id="sidebar" class="col-md-3">
+    <div id="logIn">
+        <form method="post">
+            <p><em><strong>Log in</strong></em> to save your creations!</p>
+            <label>User Name: <input type="text" name="userName"></label>
+            <label>Password: <input type="text" name="password"></label>
+            <input type="submit" value="Log In">
+        </form>
+    </div>
+</div>
+
 </html>

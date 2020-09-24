@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+
+<head th:replace="fragments :: head">
+</head>
+
+<body>
+
+<div th:replace="fragments :: nav"></div>
+
+<div class="container" id="PageGuts">
+
+    <div class="row">
+
+        <div class="col-md-9">
+
+            <h3>World Generator</h3>
+
+            <form>
+
+                <label>Name Suggestion: <input type="text"></label>
+                <input type="submit" value="Submit">
+
+            </form>
+
+        </div>
+
+        <div th:replace="fragments :: sidebar"></div>
+
+    </div>
+
+</div> <!-- end container -->
+
+</body>
+</html>

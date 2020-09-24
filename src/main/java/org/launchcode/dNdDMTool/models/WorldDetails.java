@@ -1,8 +1,10 @@
 package org.launchcode.dNdDMTool.models;
 
+import javax.persistence.Entity;
 import java.util.ArrayList;
 
-public class WorldDetails {
+@Entity
+public class WorldDetails extends AbstractEntity{
 
     private String name;
     private Integer population;

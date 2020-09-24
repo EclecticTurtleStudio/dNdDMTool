@@ -6,7 +6,55 @@
 
 <body>
 
-<p th:text="${name}">YOU ARE A FAILURE!</p>
+<div th:replace="fragments :: nav"></div>
+
+<div class="container" id="PageGuts">
+
+    <div class="row">
+
+        <div class="col-md-12">
+
+            <div class="row">
+
+                <div class="col-md-9">
+
+                    <h3 id="welcome">Welcome to D&D DM Tool!</h3>
+
+                    <div class="row" id="Generators">
+
+                        <div class="col-md-6" id="WorldGenerator">
+
+                            <a href="/world-randomizer"><img src="images/WorldLink.jpg"></a>
+
+                        </div> <!-- end WorldGenerator -->
+
+                        <div class="col-md-6" id="TownGenerator">
+
+                            <a href="#"><img src="images/TownLink.jpg"></a>
+
+                        </div> <!-- end TownGenerator -->
+
+                    </div>
+
+                    <div class="row">
+
+                        <div class="col-md-12">
+                        </div>
+
+                    </div>
+
+                </div> <!-- end main content -->
+
+                <div th:replace="fragments :: sidebar"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div><!--end PageGuts-->
+
 
 </body>
 </html>
